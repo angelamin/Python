@@ -1,7 +1,8 @@
 #!/usr/bin/python
 # -*- coding: utf-8 -*-
 # crf_segmenter.py
-# Usage:python crf_segmenter.py crf_model test_file result_file
+#  运行 python crf_segmenter.py model test_file result_file
+#  
 # 利用CRF自带的python工具包，对输入文本进行分词
 
 import codecs

@@ -95,7 +95,7 @@ def getAllLink(url):
 
 #创建本地保存文件夹，并下载保存图片
 if __name__ == '__main__':
-    html = getHtml("http://www.169ee.com/")#获取该网址网页详细信息，得到的html就是网页的源代码
+    html = getHtml("http://image.baidu.com/search/index?tn=baiduimage&ct=201326592&lm=-1&cl=2&ie=gbk&word=%B8%DF%C7%E5%BD%F0%C3%AB%B1%DA%D6%BD&hs=2&xthttps=000000&fr=ala&ori_query=%E9%AB%98%E6%B8%85%E9%87%91%E6%AF%9B%E5%A3%81%E7%BA%B8&ala=0&alatpl=sp&pos=0")#获取该网址网页详细信息，得到的html就是网页的源代码
     path = u'picture'
     mkdir(path) #创建本地文件夹
     number = 1
@@ -108,7 +108,7 @@ if __name__ == '__main__':
     imglist = getAllImg(html,number) #获取图片的地址列表
 
     number = saveImages(imglist,path,number) # 保存图片
-    url = "http://www.169ee.com/"
+    url = "http://image.baidu.com/search/index?tn=baiduimage&ct=201326592&lm=-1&cl=2&ie=gbk&word=%B8%DF%C7%E5%BD%F0%C3%AB%B1%DA%D6%BD&hs=2&xthttps=000000&fr=ala&ori_query=%E9%AB%98%E6%B8%85%E9%87%91%E6%AF%9B%E5%A3%81%E7%BA%B8&ala=0&alatpl=sp&pos=0"
     linklist = getAllLink(url)
     for link in linklist:
         # print link
