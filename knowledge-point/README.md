@@ -17,3 +17,9 @@
   python专门为for关键字做了迭代器的语法糖。
 在for循环中，Python将自动调用工厂函数iter()获得迭代器，
 在自动调用next()获取元素，还完成了检查StopIteration异常的工作
+
+## generator
+- 介绍
+带有 yield 的函数在 Python 中被称之为 generator（生成器）
+
+生成器（yield）既可以保持代码的简洁性，又可以保持代码的效果
